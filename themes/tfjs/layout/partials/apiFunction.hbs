@@ -11,6 +11,11 @@
     <span class="signature">
       {{~{paramStr}~}}
     </span>
+    {{#if isMethod}}
+      <span class="chip">method</span>
+      {{else}}
+      <span class="chip">function</span>
+    {{/if}}
     {{#each tags}}
       <span class="chip">{{.}}</span>
     {{/each}}
